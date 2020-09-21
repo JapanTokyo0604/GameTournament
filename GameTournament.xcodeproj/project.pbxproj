@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,17 @@
 		A765E51E2517133000697B07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A765E51C2517133000697B07 /* Main.storyboard */; };
 		A765E5202517133100697B07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A765E51F2517133100697B07 /* Assets.xcassets */; };
 		A765E5232517133100697B07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A765E5212517133100697B07 /* LaunchScreen.storyboard */; };
+		A7B00CE1251878320011C615 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B00CDF251878320011C615 /* SettingsViewController.swift */; };
+		A7B00CE62518785A0011C615 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B00CE52518785A0011C615 /* Settings.storyboard */; };
+		A7B00CEB251884F50011C615 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B00CEA251884F50011C615 /* Resource.swift */; };
+		A7B00CF825188ABF0011C615 /* Settings.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7B00CFA25188ABF0011C615 /* Settings.strings */; };
+		B670D4A3D7D9344CEDB0504C /* Pods_GameTournament.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE2E8AF6B1E6DCD9CB44E71 /* Pods_GameTournament.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BB4A89EE17A3EA4D5383CC2 /* Pods-GameTournament.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameTournament.debug.xcconfig"; path = "Target Support Files/Pods-GameTournament/Pods-GameTournament.debug.xcconfig"; sourceTree = "<group>"; };
+		5E0AA50EF0FE931B02B7A06B /* Pods-GameTournament.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameTournament.release.xcconfig"; path = "Target Support Files/Pods-GameTournament/Pods-GameTournament.release.xcconfig"; sourceTree = "<group>"; };
+		8BE2E8AF6B1E6DCD9CB44E71 /* Pods_GameTournament.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameTournament.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A765E5132517133000697B07 /* GameTournament.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameTournament.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A765E5162517133000697B07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A765E5182517133000697B07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		A765E51F2517133100697B07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A765E5222517133100697B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A765E5242517133100697B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7B00CDF251878320011C615 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A7B00CE52518785A0011C615 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		A7B00CEA251884F50011C615 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		A7B00CF925188ABF0011C615 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Settings.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B670D4A3D7D9344CEDB0504C /* Pods_GameTournament.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41D3BC5389EC512105CA69FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BB4A89EE17A3EA4D5383CC2 /* Pods-GameTournament.debug.xcconfig */,
+				5E0AA50EF0FE931B02B7A06B /* Pods-GameTournament.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		55AC18EDF4EE352DA2D4147A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BE2E8AF6B1E6DCD9CB44E71 /* Pods_GameTournament.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A765E50A2517133000697B07 = {
 			isa = PBXGroup;
 			children = (
 				A765E5152517133000697B07 /* GameTournament */,
 				A765E5142517133000697B07 /* Products */,
+				41D3BC5389EC512105CA69FA /* Pods */,
+				55AC18EDF4EE352DA2D4147A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +88,9 @@
 		A765E5152517133000697B07 /* GameTournament */ = {
 			isa = PBXGroup;
 			children = (
+				A7B00CF2251889D40011C615 /* Extension */,
+				A7B00CE8251884D40011C615 /* Resource */,
+				A7B00CD6251875420011C615 /* Settings */,
 				A765E5162517133000697B07 /* AppDelegate.swift */,
 				A765E5182517133000697B07 /* SceneDelegate.swift */,
 				A765E51A2517133000697B07 /* ViewController.swift */,
@@ -67,6 +102,47 @@
 			path = GameTournament;
 			sourceTree = "<group>";
 		};
+		A7B00CD6251875420011C615 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A7B00CD7251875560011C615 /* ViewContoroller */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A7B00CD7251875560011C615 /* ViewContoroller */ = {
+			isa = PBXGroup;
+			children = (
+				A7B00CDF251878320011C615 /* SettingsViewController.swift */,
+				A7B00CE52518785A0011C615 /* Settings.storyboard */,
+			);
+			path = ViewContoroller;
+			sourceTree = "<group>";
+		};
+		A7B00CE8251884D40011C615 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A7B00CED251886750011C615 /* Strings */,
+				A7B00CEA251884F50011C615 /* Resource.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A7B00CED251886750011C615 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				A7B00CFA25188ABF0011C615 /* Settings.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		A7B00CF2251889D40011C615 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A765E5272517133100697B07 /* Build configuration list for PBXNativeTarget "GameTournament" */;
 			buildPhases = (
+				F2FAFA133A313302666D00ED /* [CP] Check Pods Manifest.lock */,
 				A765E50F2517133000697B07 /* Sources */,
 				A765E5102517133000697B07 /* Frameworks */,
 				A765E5112517133000697B07 /* Resources */,
+				A75B5B19D99E6F6060DC250B /* [CP] Embed Pods Frameworks */,
+				5B7F0C825BBE391C0322AEA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,10 +207,71 @@
 				A765E5232517133100697B07 /* LaunchScreen.storyboard in Resources */,
 				A765E5202517133100697B07 /* Assets.xcassets in Resources */,
 				A765E51E2517133000697B07 /* Main.storyboard in Resources */,
+				A7B00CE62518785A0011C615 /* Settings.storyboard in Resources */,
+				A7B00CF825188ABF0011C615 /* Settings.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B7F0C825BBE391C0322AEA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameTournament/Pods-GameTournament-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameTournament/Pods-GameTournament-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GameTournament/Pods-GameTournament-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A75B5B19D99E6F6060DC250B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameTournament/Pods-GameTournament-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameTournament/Pods-GameTournament-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GameTournament/Pods-GameTournament-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2FAFA133A313302666D00ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GameTournament-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A765E50F2517133000697B07 /* Sources */ = {
@@ -141,6 +281,8 @@
 				A765E51B2517133000697B07 /* ViewController.swift in Sources */,
 				A765E5172517133000697B07 /* AppDelegate.swift in Sources */,
 				A765E5192517133000697B07 /* SceneDelegate.swift in Sources */,
+				A7B00CE1251878320011C615 /* SettingsViewController.swift in Sources */,
+				A7B00CEB251884F50011C615 /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +303,14 @@
 				A765E5222517133100697B07 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A7B00CFA25188ABF0011C615 /* Settings.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7B00CF925188ABF0011C615 /* en */,
+			);
+			name = Settings.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -282,6 +432,7 @@
 		};
 		A765E5282517133100697B07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB4A89EE17A3EA4D5383CC2 /* Pods-GameTournament.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +451,7 @@
 		};
 		A765E5292517133100697B07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E0AA50EF0FE931B02B7A06B /* Pods-GameTournament.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0wV-Cb-42F">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="FBZ-8s-m1q">
+            <objects>
+                <viewController storyboardIdentifier="Settings" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0wV-Cb-42F" customClass="SettingsViewController" customModule="GameTournament" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pdl-O3-Tqd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5E8-gb-rLc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCw-Eh-gZI">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="2JK-fr-SeU"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="tapTwitterApiStart:" destination="0wV-Cb-42F" eventType="touchUpInside" id="gag-dx-dJz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zu-zG-UXA">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="LAT-0e-5F6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4Y-kU-JOn">
+                                        <rect key="frame" x="0.0" y="100" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="cR8-nz-iRb"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="8Zu-zG-UXA" firstAttribute="top" secondItem="HCw-Eh-gZI" secondAttribute="bottom" id="GO9-LP-A4Y"/>
+                                    <constraint firstItem="X4Y-kU-JOn" firstAttribute="top" secondItem="8Zu-zG-UXA" secondAttribute="bottom" id="LVG-PZ-xsD"/>
+                                    <constraint firstAttribute="trailing" secondItem="X4Y-kU-JOn" secondAttribute="trailing" id="O8g-sd-z9h"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Zu-zG-UXA" secondAttribute="trailing" id="clg-fb-DLP"/>
+                                    <constraint firstItem="X4Y-kU-JOn" firstAttribute="leading" secondItem="5E8-gb-rLc" secondAttribute="leading" id="dCy-Ln-c0i"/>
+                                    <constraint firstAttribute="trailing" secondItem="HCw-Eh-gZI" secondAttribute="trailing" id="lxC-Ym-HHE"/>
+                                    <constraint firstItem="8Zu-zG-UXA" firstAttribute="leading" secondItem="5E8-gb-rLc" secondAttribute="leading" id="niY-Ll-hti"/>
+                                    <constraint firstItem="HCw-Eh-gZI" firstAttribute="leading" secondItem="5E8-gb-rLc" secondAttribute="leading" id="rYi-eP-rfB"/>
+                                    <constraint firstItem="HCw-Eh-gZI" firstAttribute="top" secondItem="5E8-gb-rLc" secondAttribute="top" id="ynn-mE-Qpp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p7y-0e-R35"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p7y-0e-R35" firstAttribute="bottom" secondItem="5E8-gb-rLc" secondAttribute="bottom" id="9f5-bT-14S"/>
+                            <constraint firstItem="p7y-0e-R35" firstAttribute="trailing" secondItem="5E8-gb-rLc" secondAttribute="trailing" id="ItL-OT-yVn"/>
+                            <constraint firstItem="5E8-gb-rLc" firstAttribute="leading" secondItem="p7y-0e-R35" secondAttribute="leading" id="R0z-bZ-MmL"/>
+                            <constraint firstItem="5E8-gb-rLc" firstAttribute="top" secondItem="p7y-0e-R35" secondAttribute="top" id="gvs-rZ-aU1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="twitterApiStartButton" destination="HCw-Eh-gZI" id="C9k-ca-ExI"/>
+                        <outlet property="twitterTestButton" destination="8Zu-zG-UXA" id="jwQ-W0-bLk"/>
+                        <outlet property="twitterTestButton2" destination="X4Y-kU-JOn" id="4wd-Ay-gmi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUx-g5-r5h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1280" y="171"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

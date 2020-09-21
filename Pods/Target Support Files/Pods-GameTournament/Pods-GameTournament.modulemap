@@ -1,0 +1,6 @@
+framework module Pods_GameTournament {
+  umbrella header "Pods-GameTournament-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -9,12 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var settingsButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+    }
+    
+    @IBAction func tapSettingsButton(_ sender: Any) {
+        guard let vc = Storyboard.settings.initialViewController else { return }
+        self.present(vc, animated: true)
+    }
+    
 }
 
