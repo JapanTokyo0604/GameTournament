@@ -14,11 +14,11 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var twitterApiStartButton: UIButton!
     @IBOutlet weak var twitterTestButton: UIButton!
     @IBOutlet weak var twitterTestButton2: UIButton!
+    @IBOutlet weak var testAppWebViewButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         settingsButtons()
-        
     }
     
     /// TwitterAPIのセットアップ
@@ -26,6 +26,7 @@ class SettingsViewController: UIViewController {
 
     }
     
+    /// ボタンのセットアップ
     private func settingsButtons() {
         twitterApiStartButton.setTitle(Strings.settings.get(for: "TwitterTest"), for: .normal)
     }
@@ -48,5 +49,8 @@ class SettingsViewController: UIViewController {
           }
     }
     
-    
+    @IBAction func tapAppWebViewStart(_ sender: Any) {
+        guard let vc = Storyboard.appWebView.initialViewController else { return }
+        self.present(vc, animated: true)
+    }
 }

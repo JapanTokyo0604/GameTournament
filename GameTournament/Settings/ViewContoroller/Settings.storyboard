@@ -44,14 +44,27 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUC-cZ-xaV">
+                                        <rect key="frame" x="0.0" y="150" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="f2T-8s-z4k"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="tapAppWebViewStart:" destination="0wV-Cb-42F" eventType="touchUpInside" id="G6k-Jn-QC1"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="tUC-cZ-xaV" firstAttribute="leading" secondItem="5E8-gb-rLc" secondAttribute="leading" id="0Zp-YR-VZU"/>
                                     <constraint firstItem="8Zu-zG-UXA" firstAttribute="top" secondItem="HCw-Eh-gZI" secondAttribute="bottom" id="GO9-LP-A4Y"/>
                                     <constraint firstItem="X4Y-kU-JOn" firstAttribute="top" secondItem="8Zu-zG-UXA" secondAttribute="bottom" id="LVG-PZ-xsD"/>
                                     <constraint firstAttribute="trailing" secondItem="X4Y-kU-JOn" secondAttribute="trailing" id="O8g-sd-z9h"/>
+                                    <constraint firstItem="tUC-cZ-xaV" firstAttribute="top" secondItem="X4Y-kU-JOn" secondAttribute="bottom" id="VVW-el-1FH"/>
                                     <constraint firstAttribute="trailing" secondItem="8Zu-zG-UXA" secondAttribute="trailing" id="clg-fb-DLP"/>
                                     <constraint firstItem="X4Y-kU-JOn" firstAttribute="leading" secondItem="5E8-gb-rLc" secondAttribute="leading" id="dCy-Ln-c0i"/>
+                                    <constraint firstAttribute="trailing" secondItem="tUC-cZ-xaV" secondAttribute="trailing" id="hhc-gQ-QqS"/>
                                     <constraint firstAttribute="trailing" secondItem="HCw-Eh-gZI" secondAttribute="trailing" id="lxC-Ym-HHE"/>
                                     <constraint firstItem="8Zu-zG-UXA" firstAttribute="leading" secondItem="5E8-gb-rLc" secondAttribute="leading" id="niY-Ll-hti"/>
                                     <constraint firstItem="HCw-Eh-gZI" firstAttribute="leading" secondItem="5E8-gb-rLc" secondAttribute="leading" id="rYi-eP-rfB"/>
@@ -69,6 +82,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="testAppWebViewButton" destination="tUC-cZ-xaV" id="FkP-Wc-rhr"/>
                         <outlet property="twitterApiStartButton" destination="HCw-Eh-gZI" id="C9k-ca-ExI"/>
                         <outlet property="twitterTestButton" destination="8Zu-zG-UXA" id="jwQ-W0-bLk"/>
                         <outlet property="twitterTestButton2" destination="X4Y-kU-JOn" id="4wd-Ay-gmi"/>

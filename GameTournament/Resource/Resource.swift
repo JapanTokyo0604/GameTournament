@@ -43,6 +43,7 @@ struct Resource {
     /// ex)  Storyboard.settings.initialViewController
     enum Storyboard: String {
         case settings = "Settings"
+        case appWebView = "AppWebView"
     
         var name: String {
             rawValue
@@ -56,5 +57,4 @@ struct Resource {
             storyboard.instantiateInitialViewController()
         }
     }
-    
 }
