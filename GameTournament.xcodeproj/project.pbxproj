@@ -17,6 +17,9 @@
 		A7B00CE62518785A0011C615 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B00CE52518785A0011C615 /* Settings.storyboard */; };
 		A7B00CEB251884F50011C615 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B00CEA251884F50011C615 /* Resource.swift */; };
 		A7B00CF825188ABF0011C615 /* Settings.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7B00CFA25188ABF0011C615 /* Settings.strings */; };
+		A7DFD3692541BB51009E9FE9 /* AppWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DFD3682541BB51009E9FE9 /* AppWebViewViewController.swift */; };
+		A7DFD36D2541BB72009E9FE9 /* AppWebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7DFD36C2541BB72009E9FE9 /* AppWebView.storyboard */; };
+		A7DFD3722541C522009E9FE9 /* AppWebViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DFD3712541C522009E9FE9 /* AppWebViewViewModel.swift */; };
 		B670D4A3D7D9344CEDB0504C /* Pods_GameTournament.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE2E8AF6B1E6DCD9CB44E71 /* Pods_GameTournament.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,9 @@
 		A7B00CE52518785A0011C615 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		A7B00CEA251884F50011C615 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		A7B00CF925188ABF0011C615 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Settings.strings; sourceTree = "<group>"; };
+		A7DFD3682541BB51009E9FE9 /* AppWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebViewViewController.swift; sourceTree = "<group>"; };
+		A7DFD36C2541BB72009E9FE9 /* AppWebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppWebView.storyboard; sourceTree = "<group>"; };
+		A7DFD3712541C522009E9FE9 /* AppWebViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 				A7B00CF2251889D40011C615 /* Extension */,
 				A7B00CE8251884D40011C615 /* Resource */,
 				A7B00CD6251875420011C615 /* Settings */,
+				A7DFD3662541BAA7009E9FE9 /* AppWebview */,
 				A765E5162517133000697B07 /* AppDelegate.swift */,
 				A765E5182517133000697B07 /* SceneDelegate.swift */,
 				A765E51A2517133000697B07 /* ViewController.swift */,
@@ -141,6 +148,32 @@
 			children = (
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A7DFD3662541BAA7009E9FE9 /* AppWebview */ = {
+			isa = PBXGroup;
+			children = (
+				A7DFD3702541C4E1009E9FE9 /* ViewModel */,
+				A7DFD3672541BAC3009E9FE9 /* ViewController */,
+			);
+			path = AppWebview;
+			sourceTree = "<group>";
+		};
+		A7DFD3672541BAC3009E9FE9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7DFD3682541BB51009E9FE9 /* AppWebViewViewController.swift */,
+				A7DFD36C2541BB72009E9FE9 /* AppWebView.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A7DFD3702541C4E1009E9FE9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A7DFD3712541C522009E9FE9 /* AppWebViewViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +239,7 @@
 			files = (
 				A765E5232517133100697B07 /* LaunchScreen.storyboard in Resources */,
 				A765E5202517133100697B07 /* Assets.xcassets in Resources */,
+				A7DFD36D2541BB72009E9FE9 /* AppWebView.storyboard in Resources */,
 				A765E51E2517133000697B07 /* Main.storyboard in Resources */,
 				A7B00CE62518785A0011C615 /* Settings.storyboard in Resources */,
 				A7B00CF825188ABF0011C615 /* Settings.strings in Resources */,
@@ -282,7 +316,9 @@
 				A765E5172517133000697B07 /* AppDelegate.swift in Sources */,
 				A765E5192517133000697B07 /* SceneDelegate.swift in Sources */,
 				A7B00CE1251878320011C615 /* SettingsViewController.swift in Sources */,
+				A7DFD3692541BB51009E9FE9 /* AppWebViewViewController.swift in Sources */,
 				A7B00CEB251884F50011C615 /* Resource.swift in Sources */,
+				A7DFD3722541C522009E9FE9 /* AppWebViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
