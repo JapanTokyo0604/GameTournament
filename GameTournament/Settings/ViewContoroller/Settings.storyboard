@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0wV-Cb-42F">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4DQ-8w-usJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5E8-gb-rLc">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCw-Eh-gZI">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -81,6 +81,7 @@
                             <constraint firstItem="5E8-gb-rLc" firstAttribute="top" secondItem="p7y-0e-R35" secondAttribute="top" id="gvs-rZ-aU1"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Qe4-B4-HHn"/>
                     <connections>
                         <outlet property="testAppWebViewButton" destination="tUC-cZ-xaV" id="FkP-Wc-rhr"/>
                         <outlet property="twitterApiStartButton" destination="HCw-Eh-gZI" id="C9k-ca-ExI"/>
@@ -90,7 +91,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cUx-g5-r5h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1280" y="171"/>
+            <point key="canvasLocation" x="-1596" y="568"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ToM-3r-8Jr">
+            <objects>
+                <navigationController id="4DQ-8w-usJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mv1-HY-WBL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0wV-Cb-42F" kind="relationship" relationship="rootViewController" id="5U0-EB-a3h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXK-g2-ScV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-770" y="568"/>
         </scene>
     </scenes>
     <resources>

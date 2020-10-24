@@ -22,8 +22,6 @@ class ViewController: UIViewController {
     
     @IBAction func tapSettingsButton(_ sender: Any) {
         guard let vc = Storyboard.settings.initialViewController else { return }
-        // TODO: 指定が必要
-        //        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
     }
     
