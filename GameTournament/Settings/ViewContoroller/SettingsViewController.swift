@@ -18,12 +18,27 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        settingsButtons()
+        self.setupNavigatinoBar()
+        self.settingsButtons()
     }
     
     /// TwitterAPIのセットアップ
     private func setupTwitter() {
 
+    }
+    
+    /// ナビゲーションバーのセットアップ
+    private func setupNavigatinoBar() {
+        AppNavigationBar.setupNavigatinoBar(viewController: self)
+        AppNavigationBar.setupRightBarButtonItem(viewController: self,
+                                                 itemType: .close,
+                                                 action: #selector(self.tabCloseButton(sender:)))
+        self.navigationItem.title = Strings.settings.get(for: "navigationTitle")
+    }
+    
+    /// ナビゲーションバー右側ボタンをタップした時の処理
+    @objc private func tabCloseButton(sender: UIBarButtonItem) {
+        self.dismiss(animated: true)
     }
     
     /// ボタンのセットアップ
