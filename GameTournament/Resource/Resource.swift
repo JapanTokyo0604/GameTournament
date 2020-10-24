@@ -22,7 +22,6 @@ struct Resource {
         static let secretKey = ""
     }
     
-    
     /// Stringsファイル管理
     ///
     /// ex)  Strings.settings.get(for: "TwitterTest")
@@ -54,7 +53,9 @@ struct Resource {
         }
         
         var initialViewController: UIViewController? {
-            storyboard.instantiateInitialViewController()
+            let vc = storyboard.instantiateInitialViewController()
+            vc?.modalPresentationStyle = .fullScreen
+            return vc
         }
     }
 }
